@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NutriHive Clinic - Book an Appointment</title>
+</head>
+<body>
+    <p><a href="Pro2.html">&larr; Back to NutriHive Home</a></p>
+
+    <h1 style="text-align: center;">NutriHive Clinic<hr></h1>
+    <h2 style="text-align: center;">Book an Appointment<hr></h2>
+
+    <table align="center" border="1" cellpadding="5">
+    <tr><td>
+    <form action="appointment_submit.php" method="post">
+        <h3>Personal Information<hr></h3>
+        <table>
+        <tr><td><label for="fname">First Name:</label></td>
+        <td><input type="text" id="fname" placeholder="Enter your first name here"></td></tr>
+
+        <tr><td><label for="lname">Last Name:</label></td>
+        <td><input type="text" id="lname" placeholder="Enter your last name here"></td></tr>
+
+        <tr><td><label for="DOB">Date of Birth:</label></td>
+        <td><input type="date" id="DOB"></td></tr>
+        </table>
+
+        <h3><hr>Appointment Details<hr></h3>
+        <table>
+        <tr><td><label for="apptdate">Preferred Date:</label></td>
+        <td><input type="date" id="apptdate"></td></tr>
+
+        <tr><td><label for="appttime">Preferred Time:</label></td>
+        <td><input type="time" id="appttime"></td></tr>
+
+        <tr><td><label for="reason">Reason for Visit:</label></td>
+        <td><select name="reason" id="reason">
+            <option value="general">General Nutrition Consultation</option>
+            <option value="weight">Weight Management</option>
+            <option value="diabetic">Diabetic Diet Plan</option>
+            <option value="sports">Sports Nutrition</option>
+            <option value="recovery">Post-Surgery Recovery Diet</option>
+            <option value="other">Other</option>
+        </select></td></tr>
+
+        <tr><td><label for="nutritionist">Preferred Nutritionist:</label></td>
+        <td><select name="nutritionist" id="nutritionist">
+            <option value="any">Any Available</option>
+            <option value="denis">Dr. Dennis</option>
+            <option value="jeri">Dr. Jeri</option>
+        </select></td></tr>
+        </table>
+
+        <h3><hr>Contact Information<hr></h3>
+        <table>
+        <tr><td><label for="Phone">Phone Number:</label></td>
+        <td><input type="text" inputmode="numeric" id="Phone" placeholder="Enter your phone number"></td></tr>
+
+        <tr><td><label for="email">Email Address:</label></td>
+        <td><input type="email" id="email" placeholder="Enter your email address"></td></tr>
+
+        <tr><td><label for="splreq">Additional Notes:</label></td>
+        <td><textarea id="splreq" rows="4" cols="40" placeholder="Any allergies, conditions, or special requests"></textarea></td></tr>
+        </table>
+        <br>
+        <input type="reset">
+        <br>
+        <input type="submit" value="Book Appointment">
+    </form>
+    </td></tr>
+    </table>
+
+    <p style="text-align: center;">Already have an account? <a href="Pro3 LOGIN.html">Login here</a></p>
+</body>
+</html>
